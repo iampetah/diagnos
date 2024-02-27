@@ -125,7 +125,7 @@ $services = $servicesModel->getAllServices();
 
                       <div class="fields">
                         <div class="input-field">
-                          <label>Lastname*(Jr.Sr. and etc...)</label>
+                          <label>Lastname*</label>
                           <input type="text" name="appointment_lastname" placeholder="Enter your Lastame" required>
                         </div>
                         <div class="input-field">

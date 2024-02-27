@@ -86,8 +86,12 @@ foreach ($appointment->services as $services) {
                   <label for="inputName5" class="form-label">Firstname</label>
                   <input type="text" class="form-control" id="inputName5" value="<?php echo $patient->first_name ?>" readonly>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <label for="inputName5" class="form-label">Middlename</label>
+                  <input type="text" class="form-control" id="inputName5" value="<?php echo $patient->middle_name ?>" readonly>
+                </div>
+                <div class="col-md-1">
+                  <label for="inputName5" class="form-label">Suffix</label>
                   <input type="text" class="form-control" id="inputName5" value="<?php echo $patient->middle_name ?>" readonly>
                 </div>
                 <div class="col-md-3">
