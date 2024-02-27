@@ -138,7 +138,7 @@ $services = $servicesModel->getAllServices();
                         </div>
                         <div class="input-field">
                           <label>Suffix</label>
-                          <input type="text" name="appointment_middlename" placeholder="Enter your Middlename" required>
+                          <input type="text" name="appointment_suffix" placeholder="Enter your Suffix" required>
                         </div>
                         <div class="input-field">
                           <label>Sex*</label>

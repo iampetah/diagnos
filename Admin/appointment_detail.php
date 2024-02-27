@@ -92,7 +92,7 @@ foreach ($appointment->services as $services) {
                 </div>
                 <div class="col-md-1">
                   <label for="inputName5" class="form-label">Suffix</label>
-                  <input type="text" class="form-control" id="inputName5" value="<?php echo $patient->middle_name ?>" readonly>
+                  <input type="text" class="form-control" id="inputName5" value="<?php echo isset($patient->suffix) ? $patient->suffix : ""  ?>" readonly>
                 </div>
                 <div class="col-md-3">
                   <label for="inputName5" class="form-label">Sex</label>

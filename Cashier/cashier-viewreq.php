@@ -104,20 +104,20 @@ $request = $requestModel->getRequestById($_GET['request_id']);
             <!-- Multi Columns Form -->
             <form action="#" class="row g-3">
               <div class="col-md-4">
-                <label for="inputName5" class="form-label">Last name</label>
+                <label for="inputName5" class="form-label">Lastname</label>
                 <input type="text" class="form-control" id="inputName5" value="<?php echo $request->patient->last_name ?>" readonly />
               </div>
               <div class="col-md-4">
-                <label for="inputName5" class="form-label">First name</label>
+                <label for="inputName5" class="form-label">Firstname</label>
                 <input type="text" class="form-control" id="inputName5" value="<?php echo $request->patient->first_name ?>" readonly />
               </div>
-              <div class="col-md-3">
-                <label for="inputName5" class="form-label">Middle name</label>
-                <input type="text" class="form-control" id="inputName5" value="" readonly />
+              <div class="col-md-4">
+                <label for="inputName5" class="form-label">Middlename</label>
+                <input type="text" class="form-control" id="inputName5" value="<?php echo $request->patient->middle_name ?>" readonly />
               </div>
-              <div class="col-md-1">
-                <label for="inputName5" class="form-label">Suffix</label>
-                <input type="text" class="form-control" id="inputName5" value="" readonly />
+              <div class="col-md-4">
+                <label>Suffix</label>
+                <input type="text" class="form-control" placeholder="Enter your Suffix" value="<?php echo $request->patient->getSuffix() ?>" readonly>
               </div>
               <div class="col-md-3">
                 <label for="inputName5" class="form-label">Sex</label>
@@ -135,6 +135,7 @@ $request = $requestModel->getRequestById($_GET['request_id']);
                 <label for="inputName5" class="form-label">Mobile Number</label>
                 <input type="text" class="form-control" id="inputName5" value="<?php echo $request->patient->mobile_number ?>" readonly />
               </div>
+
               <div class="col-md-6">
                 <label for="inputEmail5" class="form-label">Building/ House Number</label>
                 <input type="email" class="form-control" id="inputEmail5" value="<?php echo $request->patient->house_no ?>" readonly>
@@ -208,10 +209,10 @@ $request = $requestModel->getRequestById($_GET['request_id']);
               <input type="text" class="form-control" placeholder="Input Insurance " name="insurance" />
               <label for="inputPassword5" class="form-label">Money</label>
               <label class="col" for="" style=" position:absolute; margin-top:35px; margin-left:-45px; font-size: 20px;  ">&#x20B1;</label>
-              <input type="number" class="form-control" style="text-indent:13px;" id="number1" oninput="calculateChange()" placeholder="Input Money" name="payment" required />
+              <input type="number" class="form-control" style="text-indent:10px;" id="number1" oninput="calculateChange()" placeholder="Input Money" name="payment" required />
               <label for="inputPassword5" class="form-label">Total Amount</label>
               <label class="col" for="" style=" position:absolute; margin-top:35px; margin-left:-95px; font-size: 20px;  ">&#x20B1;</label>
-              <input type="number" name="total_amount" style="text-indent:13px;" class="form-control" id="number2" value="<?php echo $request->total ?>.00" readonly />
+              <input type="number" name="total_amount" style="text-indent:10px;" class="form-control" id="number2" value="<?php echo $request->total ?>.00" readonly />
               <label for="inputPassword5" class="form-label">Change</label>
               <label class="col" for="" style=" position:absolute; margin-top:35px; margin-left:-55px; font-size: 20px;  ">&#x20B1;</label>
               <input type="number" class="form-control" value="0.00" style="text-indent:10px;" id="result" readonly />

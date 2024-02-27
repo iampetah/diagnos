@@ -162,21 +162,21 @@ $packages = $servicesModel->getAllPackages();
                       </script>
                       <div class="fields">
                         <div class="input-field">
-                          <label>Last name*</label>
+                          <label>Lastname*(Jr.Sr. and etc...)</label>
                           <input type="text" id='last_name' name="request_lastname" placeholder="Enter your Lastame" required>
                         </div>
 
                         <div class="input-field">
-                          <label>First name*</label>
+                          <label>Firstname*</label>
                           <input type="text" id='first_name' name="request_firstname" placeholder="Enter your Firstname" required>
                         </div>
                         <div class="input-field">
-                          <label>Middle name</label>
+                          <label>Middlename</label>
                           <input type="text" id='middle_name' name="request_middlename" placeholder="Enter your Middlename">
                         </div>
                         <div class="input-field">
                           <label>Suffix</label>
-                          <input type="text" id='middle_name' name="request_middlename" placeholder="Enter your Middlename">
+                          <input type="text" name="request_suffix" id="suffix" placeholder="Enter your Suffix" required>
                         </div>
 
                         <div class="input-field">

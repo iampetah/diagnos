@@ -24,7 +24,6 @@ for ($i = 0; $i < count($request->services); $i++) {
 <style>
   label {
     font-weight: 00;
-    font-weight:550;
   }
 </style>
 
@@ -80,22 +79,22 @@ for ($i = 0; $i < count($request->services); $i++) {
               <!-- Multi Columns Form -->
               <div class="row g-3">
                 <div class="col-md-4">
-                  <label for="inputName5" class="form-label">Last name</label>
+                  <label for="inputName5" class="form-label">Lastname</label>
                   <input type="text" class="form-control" id="inputName5" value="<?php echo $request->patient->last_name ?>" readonly>
                 </div>
                 <div class="col-md-4">
-                  <label for="inputName5" class="form-label">First name</label>
+                  <label for="inputName5" class="form-label">Firstname</label>
                   <input type="text" class="form-control" id="inputName5" value="<?php echo $request->patient->first_name ?>" readonly>
                 </div>
-                <div class="col-md-3">
-                  <label for="inputName5" class="form-label">Middle name</label>
+                <div class="col-md-4">
+                  <label for="inputName5" class="form-label">Middlename</label>
                   <input type="text" class="form-control" id="inputName5" value="<?php echo $request->patient->middle_name ?>" readonly>
                 </div>
-                <div class="col-md-1">
-                  <label for="inputName5" class="form-label">Suffix</label>
-                  <input type="text" class="form-control" id="inputName5" value="<?php echo $request->patient->middle_name ?>" readonly>
+                <div class="col-md-4">
+                  <label class="form-label">Suffix</label>
+                  <input type="text" class="form-control" value="<?php echo $request->patient->getSuffix() ?>" readonly>
                 </div>
-                <div class="col-md-3">
+                <div class=" col-md-3">
                   <label for="inputName5" class="form-label">Sex</label>
                   <input type="text" class="form-control" id="inputName5" value="<?php echo $request->patient->gender ?>" readonly>
                 </div>
@@ -149,12 +148,8 @@ for ($i = 0; $i < count($request->services); $i++) {
                 <div class="col-12">
                   <label for="inputName5" class="form-label">ID</label>
                   <img src='<?php echo "../uploads/" . $request->patient->image_url ?>' style=" width: 85.6mm;
-  height: 54mm;" alt="id">
+  height: 54mm;" alt="asdf">
                 </div>
-                <div style="background-color: white; position: absolute; height: 18px; width: 35px;  margin-top:680px; margin-left:28px;">
-
-                </div>
-              
               </div>
 
               <hr>

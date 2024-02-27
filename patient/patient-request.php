@@ -149,7 +149,7 @@ $page = 'add_request_form'; // for the components/sidebar.html
                         </div>
                         <div class="input-field">
                           <label>Suffix</label>
-                          <input type="text" id='middle_name' name="request_middlename" placeholder="Enter your Middlename">
+                          <input type="text" id="suffix" name="request_suffix" placeholder="Enter your Suffix" required>
                         </div>
                         <div class="input-field">
                           <label>Sex*</label>
